@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    font-size: 12px;
+	color: #424242;
+}
+
+body, html {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Body */
+
+.container {
+	width: 100%;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.top-header {
+	margin-right: 1em;
+	margin-left: 1em;
+	border-bottom: solid #bcbbbb;
+	padding: 1em;
+}
+
+.left-log {
+	width: 16.66%;
+}
+
+.my_name {
+	text-align: right;
+	margin-right: 1em;
+}
+
+/* Add @media query to style h1 & h2*/
+@media screen and (min-width: 550px) {
+	h1, h2 {
+		font-style: italic;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	h1, h2 {
+		font-weight: bold;
+	}
+}
+
+.first_img {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	max-height: 300px;
+	padding: 1em;
+}
+
+.me {
+	text-align: right;
+	width: 65%;
+}
+
+
+.spare_time {
+	font-style: italic;
+	color: #bcbbbb;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 16px;
+	color: black;
+}
+
+.second_img {
+	width: 100%;
+	padding: 1em;
+}
+
+.soccer {
+	width: 100%;
+}
+
+.course {
+	width: 100%;
+}
+
+.view {
+	width: 100%;
+}
+
+.third_img {
+	width: 100%;
+	padding: 1em;
+}
+
+.fourth_img {
+	width: 100%;
+	padding: 1em;
+}
+
+.flex-second_box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	height: 100%;
+	width: 100%;
+}
+
+/*Footer*/
+
+footer {
+	width: 100%;
+	padding: 1em;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	display: inline-block;
+	margin: 2em;
+}
+
+footer a {
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+
+@media screen and (min-width: 550px) {
+	.flex-second_box {
+		display: flex;
+		flex-direction: row;
+	}
+	.second_img {
+		width: 50%;
+		order: 0;
+	}
+	.third_img {
+		width: 50%;
+	}
+	p {
+		color: black;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	.flex-second_box {
+		display: flex;
+		flex-direction: row;
+	}
+	.second_img {
+		width: 33.33%;
+		order: 0;
+	}
+	.third_img {
+		width: 33.33%;
+	}
+	.fourth_img {
+		width: 33.33%
+	}
+	h3, h2, p {
+		font-size: 20px
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	h3, p {
+		font-size: 24px;
+	}
+}
+
